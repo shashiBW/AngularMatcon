@@ -1,0 +1,14 @@
+<button class="responsiveButton" (click)="OnProductsDropdown()">All products</button>
+  <ul [style.display] = "displayresponcediv">
+      <li  (mouseover)='mouseover()' (mouseleave)="mouseleave()"  routerLink="/products/SHR" routerLinkActive="active-link">SHR</li>
+      <li (mouseover)='mouseover()' (mouseleave)="mouseleave()" routerLink="/products/product2" routerLinkActive="active-link">PRODUCT 2</li>
+      <li (mouseover)='mouseover()' (mouseleave)="mouseleave()" routerLink="/products/product3" routerLinkActive="active-link">PRODUCT 3</li>
+      <li (mouseover)='mouseover()' (mouseleave)="mouseleave()" routerLink="/products/product4" routerLinkActive="active-link">PRODUCT 4</li>
+      <li (mouseover)='mouseover()' (mouseleave)="mouseleave()" routerLink="/products/product5" routerLinkActive="active-link">PRODUCT 5</li>
+      <li (mouseover)='mouseover()' (mouseleave)="mouseleave()" routerLink="/products/product6" routerLinkActive="active-link">PRODUCT 6</li>
+  </ul>
+<div class="showhideClass" [style.display] = "displaydiv" >
+  <section>To establish Micron Engineers as a leader in Engineering service providers for Design & Engineering by effective Research & Development</section>
+  <section></section>
+  <section></section>
+</div>

@@ -1,0 +1,130 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:blue;
+    display: block;
+}
+li {
+    float: left;
+    width: 16%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #85a8c3;
+    
+}
+.active-link{
+    background-color: #85a8c3;
+}
+li a{
+    text-decoration: none;
+}
+.responsiveButton{
+    display: none;
+}
+
+/* @media  (max-width: 1092px) and( min-width : 976px) {
+    li {width: 13%;}
+} */
+/* @media (max-width: 1170px) and (min-width: 840px) {
+    li {width: 12%;}
+} */
+/* @media (max-width: 840px) and (min-width: 550px) {
+    li {
+        width: 11%;
+        font-size: 14px;
+    }
+} */
+
+@media only screen and (max-width: 630px) {
+    li {width: 100%;}
+    .responsiveButton{
+        display: block; 
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        height: 42px;
+        background: blue;
+        color: white;
+        text-align: center;
+    }
+    ul{
+        display: none;
+    }
+
+    
+
+}
+.showhideClass{
+    width: 100%;
+    height: 20vh;
+    display: none;
+    border-bottom: 2px solid #20264a;
+    box-shadow: 0px 1px 4px #a095a0;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+      
+}
+.showhideClass >section:nth-child(1){
+    width: 20%;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+}
+.showhideClass >section:nth-child(2){
+    height: 45%;
+    border: 2px solid black;
+    
+}
+.showhideClass >section:nth-child(3){
+    width: 20%;
+    height: 45%;
+    background: red;
+    margin: 10px;
+}
+@media (max-width : 750px) and (min-width : 400px){
+    .showhideClass >section:nth-child(1){
+        width: 40%;
+        
+    }
+    .showhideClass >section:nth-child(2){
+        height: 55%;
+        border: 2px solid black;
+        
+    }
+    .showhideClass >section:nth-child(3){
+        width: 40%;
+        
+    }
+}
+@media (max-width : 400px) {
+    .showhideClass{
+        height: 40vh;
+        
+    }
+    .showhideClass >section:nth-child(1){
+        width: 50%;
+        font-size: 11px;
+    }
+    .showhideClass >section:nth-child(2){
+        height: 40%;
+        border: 2px solid black;
+        
+    }
+    .showhideClass >section:nth-child(3){
+        width: 40%;
+        
+    }
+}

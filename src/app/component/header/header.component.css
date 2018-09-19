@@ -1,0 +1,160 @@
+.maindiv{
+    display: flex;
+    height: 9vh;
+    align-items: center;
+    padding: 0 8px;
+}
+.maindiv1{
+    width: 60px;
+    height: 60px;
+     background: #061f38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.menuBG {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    float: left;
+}
+.menuIcon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuBG .menuIcon .menuIcon1 div {
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+.menuIcon1 {
+    transform: rotate(90deg);
+   
+}
+.firstAnim{
+    width: 300px;
+    height: 50px;
+    background: #061f38;
+    border-radius: 50px;
+    position: absolute;
+    top: 60px;
+
+}
+.rotatediv{
+    
+    transform: rotate(90deg); 
+    position: absolute;
+    z-index: 2;
+}
+
+.menu{
+    width: 300px;
+    height: 0px;
+    background: #061f38;
+    border-radius: 20px;  
+    transition: width 2s;  
+    position: absolute;
+    color: white;
+    opacity: 0;
+    
+}
+
+.menu .menuMaindiv{
+    
+    display: flex;
+}
+.menu .menuMaindiv >section:nth-child(1){
+    width: 90%;
+    text-align: right;
+    padding: 15px 16px;
+
+}
+.menu .menuMaindiv >section:nth-child(1) >div:nth-child(2){
+    font-size: 12px;
+
+}
+.menu .menuMaindiv >section:nth-child(2){
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px;
+    background: #02162bb3;
+    
+
+}
+.menu .menuMaindiv:first-child >section:nth-child(2){
+
+    border-radius: 0 20px 0 0;
+
+}
+.menu .menuMaindiv:last-child >section:nth-child(2){
+    
+    border-radius: 0 0px 20px 0;
+    
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 70px;
+}
+.logo img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+.logo >section:nth-child(2){
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+}
+.socialNetwork{
+    float: right;
+}
+.socialNetwork section{
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+    
+}
+
+@media only screen and (max-width: 630px) {
+    
+    .logo{
+        padding: 0 20px 0 68px;
+    }
+    .logo img{
+        width: 25px;
+        height: 25px;
+        margin-right: 4px;
+        padding: 0px;
+    }
+    .logo >section:nth-child(2){
+        font-size: 23px;
+    }
+    .socialNetwork section{
+        width: 19px;
+        height: 19px;
+        margin: 2px;
+    }
+}
+.menuMaindiv:hover{
+    background: #020e1b;
+    cursor: pointer;
+}
+.active-menu{
+    background: #020e1b;
+}

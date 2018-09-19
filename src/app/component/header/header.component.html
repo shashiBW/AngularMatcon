@@ -1,0 +1,68 @@
+<div class="maindiv">
+  <div class="rotatediv" [@popOverState]="stateName">
+    <div class="maindiv1">
+      <div class="menuBG">
+          <div class="menuIcon" (click)="OnMenuClick()">
+            <div class="menuIcon1" [@MenuIcon]="menuIcon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <div class="firstAnim"></div>
+    <div class="menu" [@MenuOverState]="menustate">
+      <div class="menuMaindiv" (click)="OnMenuClick()" routerLink="company" routerLinkActive="active-menu">
+        <section>
+          <div>COMPANY</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid voluptate </div>
+        </section>
+        <section><img src="./assets/pause.png" style="width:15px;height:15px"></section>
+      </div>
+      <div class="menuMaindiv" (click)="OnMenuClick()" routerLink="products" routerLinkActive="active-menu">
+        <section>
+          <div>PRODUCTS</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid voluptate </div>
+        </section>
+        <section><img src="./assets/pause.png" style="width:15px;height:15px"></section>
+      </div>
+      <div class="menuMaindiv" (click)="OnMenuClick()" routerLink="services" routerLinkActive="active-menu">
+        <section>
+          <div>SERVICES</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid voluptate </div>
+        </section>
+        <section><img src="./assets/pause.png" style="width:15px;height:15px"></section>
+      </div>
+      <div class="menuMaindiv" (click)="OnMenuClick()" routerLinkActive="active-menu">
+        <section>
+          <div>ACCREDITATION</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid voluptate </div>
+        </section>
+        <section><img src="./assets/pause.png" style="width:15px;height:15px"></section>
+      </div>
+      <div class="menuMaindiv" (click)="OnMenuClick()" routerLinkActive="active-menu">
+        <section>
+          <div>CONTACT US</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid voluptate </div>
+        </section>
+        <section><img src="./assets/pause.png" style="width:15px;height:15px"></section>
+      </div>
+      
+    </div>
+  </div>
+  <div class="logo">
+    <img src="./assets/square.png">
+    <section>MATCON</section>
+  </div>
+  <div class="socialNetwork">
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section> 
+    <section></section>
+  </div>
+</div>
+
+  
